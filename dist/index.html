@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='ja'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DogmaBlade Simulator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="main.js"></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172733343-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-172733343-2');
+    </script>
+
+  </head>
+  <body>
+    <div id="marginContainer" style="transform: scale(0.85, 0.85);">
+      <div id="statusContainer">
+        <div id="canvas_wrapper">
+          <canvas id="statuscanv" width="280px" height="400px" ></canvas>
+        </div>
+        <div id="status_textbox">
+          <div id="cardNameBox">
+            <p id="cardNameText">name</p>
+          </div>
+          <div id="cardTypeBox">
+            <p id="cardTypeText">type</p>
+          </div>
+          <div id="cardEffBox">
+            <p id="cardEffText">text</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="mainBoardContainer">
+        <canvas id="canv" 
+        style="background-color:rgb(221, 250, 226);
+                position: absolute;"
+        width="1500px" height="1000px">
+        </canvas>
+
+        <!-- <div id="tweetButton">
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" id="twitter-share-button" data-show-count="false">Tweet</a>
+        </div> -->
+        
+
+        <div id="selectMenuContainer">
+          <canvas id="selectMenuBack" 
+            style="position: absolute; 
+                    z-index: 0;"
+            width="1500px" height="1000px" >
+          </canvas>
+
+          <div id="scrollAreaContainer">
+            <div id="content">
+              <div id="selectMessageBox">
+                <p id="selectMessageText">select</p>
+              </div>
+              <div id="scrollArea">
+                <canvas id="displayCanv"
+                  style="height: 100%;">
+                </canvas>
+              </div>
+              <canvas id="selectButtonCanv" >
+              </canvas>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>
