@@ -2371,12 +2371,7 @@ window.onload = function() {
         await draw(1);
         game.firstHand = [...game.HAND].map(c=>c.cardNameJP);
         await shadPhase("STANBY PHASE");
-        await shadPhase("MAIN PHASE");
-        /**
-        * 追加
-        */
-        await shadPhase("game.HAND[1]");
-        
+        await shadPhase("MAIN PHASE");        
         cardContainer.mouseEnabled = true;
     };
 
