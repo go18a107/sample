@@ -2375,7 +2375,7 @@ window.onload = function() {
         /**
         * 追加
         */
-        await shadPhase(game.HAND[1]);
+        await shadPhase("game.HAND[1]");
         
         cardContainer.mouseEnabled = true;
     };
