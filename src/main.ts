@@ -2220,6 +2220,7 @@ window.onload = function() {
                     };
                 };
             })();
+            await shadPhase("STANBY PHASE");
             await deckShuffle();
             resolve();
         });
@@ -2368,7 +2369,7 @@ window.onload = function() {
                 .to({alpha:1},250);
         });
         await shadPhase("DRAW PHASE")
-        await draw(1);
+        await draw(2);
         game.firstHand = [...game.HAND].map(c=>c.cardNameJP);
         await shadPhase("STANBY PHASE");
         /*await shadPhase("MAIN PHASE");  */
