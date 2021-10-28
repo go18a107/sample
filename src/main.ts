@@ -2220,6 +2220,7 @@ window.onload = function() {
                     };
                 };
             })();
+            await shadPhase("STANBY PHASE");
             await deckShuffle();
             resolve();
         });
